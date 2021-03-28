@@ -1,1 +1,1 @@
-# Artificial-Intelligence-Foundations-and-Applications-Course-
+Artificial Intelligence Foundations and Applications Course
