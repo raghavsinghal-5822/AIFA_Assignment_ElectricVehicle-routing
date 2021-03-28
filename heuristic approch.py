@@ -38,7 +38,7 @@ def path_plot(car_s: car, city_list):
         node_list.append(x)
 
 
-    # supply heuristic value #
+    # finding heuristic value #
     op = list()
     op.append(car_s.dest.num)
     node_list[car_s.dest.num].h_cost = 0
@@ -52,10 +52,10 @@ def path_plot(car_s: car, city_list):
                 elif node_list[j].h_cost > (city_list[i].dist[j] + node_list[i].h_cost):
                     node_list[j].h_cost = city_list[i].dist[j] + node_list[i].h_cost
                     op.append(j)
-    #heuristic calculation done... #
+    
 
 
-    # A* algorithm search #
+    # Doing A* algorithm search #
     closed = list()
     opent = list()
     opent.append(car_s.src.num)
@@ -81,7 +81,7 @@ def path_plot(car_s: car, city_list):
                         node_list[j].f_cost = node_list[i].t_cost + g
                         node_list[j].pred = i
 
-    # A* search completed... optimal path found #
+    # A* optimal path found #
 
     # path finding
     path = list()
@@ -93,7 +93,7 @@ def path_plot(car_s: car, city_list):
     car_s.path = path
     #....path found
 
-    #travel and charging time calulated
+    
     travel_time = 0
     crg_time = 0
     for i in range(len(path)-1):
