@@ -1,0 +1,5 @@
+collections
+copy 
+numpy 
+matplotlib
+scipy 
