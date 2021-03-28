@@ -2,6 +2,4 @@ Artificial Intelligence Foundations and Applications Course
 
 GROUP MEMBERS :
 
-AKASH GUPTA (17PH20015)
-RAGHAV SINGHAL (17PH20028)
-VIJAY KAG (17PH20034)
+Akash Gupta (17PH20015) , Raghav Singhal (17PH20028) , Vijay Kag (17PH20034)
