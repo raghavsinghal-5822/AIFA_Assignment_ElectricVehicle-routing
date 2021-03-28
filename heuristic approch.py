@@ -19,9 +19,6 @@ class car:
         #found
         self.tot_time = None
         self.path = list()
-    
-
-
 
 def path_plot(car_s: car, city_list):
     class node:
