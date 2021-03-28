@@ -236,9 +236,12 @@ while(len(global_time_list)!=0):
         if len(cars_list_list[conflict_node])>0:
             precities_charging_cars_list[conflict_node] = schedule(cars_list_list[conflict_node], precities_charging_cars_list[conflict_node], charge_time_left_list, conflict_node)
 for k in range(K):
+    for i in range(len(all_cars[k].path)):
+        all_cars[k].path[i]=all_cars[k].path[i]+1
+    
+for k in range(K):
     print('route by car'+str(k+1)+'=> ')
     print(all_cars[k].path)
-    
     
     
     
