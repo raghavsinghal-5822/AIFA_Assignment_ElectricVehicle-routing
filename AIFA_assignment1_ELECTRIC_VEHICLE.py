@@ -219,7 +219,7 @@ while(len(time_lists)!=0):
         precities_citi_time_list[c_node] = citi[3]
         vehicles[c_node].append(citi)
         left_charge_timings_[visit_charge_[c_node]] -= wait_time
-        if(len(vehicles[c_node])>0):   # changing departure time
+        if(len(vehicles[c_node])>0):   
             for i in range(len(vehicles[c_node])):
                 if(vehicles[c_node][i][0].id!=visit_charge_[c_node]):
                     index_list_in_time_lists=[]
